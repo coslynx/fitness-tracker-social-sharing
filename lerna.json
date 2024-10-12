@@ -1,0 +1,44 @@
+{
+  "version": "5.0.0",
+  "packages": [
+    "src/frontend",
+    "src/backend",
+    "src/shared",
+    "src/api",
+    "src/tools"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "conventionalCommits": false,
+      "access": "public"
+    },
+    "bootstrap": {
+      "hoist": true,
+      "ignore": [
+        "**/node_modules/**"
+      ]
+    },
+    "run": {
+      "parallel": false,
+      "stream": true,
+      "reject": true,
+      "topological": true
+    }
+  },
+  "overrides": {
+    "*.spec.ts": {
+      "devDependencies": {
+        "jest": "29.7.0",
+        "@testing-library/react": "16.0.1"
+      }
+    },
+    "*.spec.js": {
+      "devDependencies": {
+        "jest": "29.7.0",
+        "@testing-library/react": "16.0.1"
+      }
+    }
+  }
+}
