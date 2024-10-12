@@ -1,0 +1,145 @@
+# Build artifacts
+dist/
+build/
+.next/
+
+# Local environment files
+.env.local
+.env
+
+# IDE and editor specific files
+*.suo
+*.user
+*.tmp
+*.log
+*.bak
+*.swp
+
+# Logs
+logs/
+
+# Test files
+*.spec.js
+*.spec.ts
+*.spec.jsx
+*.spec.tsx
+
+# Coverage reports
+coverage/
+
+# IDE and editor specific files
+.idea/
+.vscode/
+.DS_Store
+
+# npm and yarn cache
+.npmrc
+node_modules/
+yarn.lock
+
+# Temporary files
+.DS_Store
+Thumbs.db
+*.pem
+*.key
+
+# Database files
+*.sqlite3
+*.db
+*.sql
+
+# Local configuration
+config.local.js
+config.local.ts
+config.local.json
+
+# Shared UI components
+shared/ui-components/src/**/*.spec.ts
+shared/ui-components/src/**/*.spec.js
+
+# Shared utilities
+shared/utils/src/**/*.spec.ts
+shared/utils/src/**/*.spec.js
+
+# API source code
+api/src/**/*.spec.ts
+api/src/**/*.spec.js
+
+# Tools source code
+tools/src/**/*.spec.ts
+tools/src/**/*.spec.js
+
+# Docker related files
+docker-compose.yml
+dockerfile
+
+# Jest configuration
+jest.config.js
+
+# Lerna configuration
+lerna.json
+
+# Husky configuration
+.husky/
+
+# Prettier configuration
+.prettierrc
+
+# Next.js build output
+out/
+
+# TypeScript build output
+build/
+
+# Storybook build output
+storybook-static/
+
+# Cypress test results
+cypress/results/
+
+# Jest coverage reports
+coverage/
+
+# ESLint reports
+eslint-reports/
+
+# Other build artifacts
+*.d.ts
+*.d.ts.map
+*.d.ts.d.ts
+*.d.ts.d.ts.map
+*.d.ts.d.ts.d.ts
+*.d.ts.d.ts.d.ts.map
+*.js.map
+*.css.map
+*.json.map
+*.svg.map
+*.png.map
+*.jpg.map
+*.gif.map
+*.webp.map
+
+# Serverless framework build output
+serverless/
+
+# AWS SAM build output
+sam/
+
+# Vercel build output
+.vercel/
+
+# Netlify build output
+.netlify/
+
+# Gatsby build output
+public/
+
+# Next.js Serverless Functions build output
+.serverless/
+
+# Firebase build output
+firebase/
+
+# Generated code
+*.gen.ts
+*.gen.js
