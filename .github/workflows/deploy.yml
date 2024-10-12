@@ -1,0 +1,27 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install
+      - name: Build app
+        run: npm run build
+      - name: Deploy to Vercel
+        uses: vercel/vercel-action@v2
+        with:
+          token: ${{ secrets.VERCEL_TOKEN }}
+          project: my-fitness-tracker
+          # branch: "main"
+          # cache: true
+          # cache: false
