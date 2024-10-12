@@ -1,0 +1,104 @@
+/* src/frontend/components/styles/global.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global typography styles */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Global layout styles */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Global color scheme and background */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Global button styles */
+button {
+  @apply px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Global input styles */
+input {
+  @apply px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Global modal styles */
+.modal {
+  @apply bg-white rounded-lg shadow-lg p-6 w-11/12 md:w-2/3 max-w-xl;
+}
+
+/* Global spinner styles */
+.spinner {
+  @apply w-12 h-12 border-4 border-gray-400 rounded-full animate-spin;
+}
+
+/* Global header styles */
+.header {
+  @apply bg-white shadow-md py-4 px-6 flex justify-between items-center;
+}
+
+/* Global footer styles */
+.footer {
+  @apply bg-gray-800 py-4 px-6 text-center text-gray-300;
+}
+
+/* Global sidebar styles */
+.sidebar {
+  @apply fixed top-0 left-0 z-40 flex flex-col w-64 h-screen bg-gray-800 text-white shadow-md;
+}
+
+/* Global container styles */
+.container {
+  @apply mx-auto py-12 px-4;
+}
+
+/* Global grid styles */
+.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+/* Global animation styles */
+.animation {
+  @apply transition duration-500 ease-in-out;
+}
+
+/* Global responsive styles */
+@media (max-width: 768px) {
+  .grid {
+    @apply grid-cols-1;
+  }
+}
+
+/* Global accessibility styles */
+.sr-only {
+  @apply sr-only;
+}
+
+/* Global utility classes */
+.bg-primary {
+  @apply bg-blue-500;
+}
+
+.text-primary {
+  @apply text-blue-500;
+}
+
+.bg-secondary {
+  @apply bg-gray-300;
+}
+
+.text-secondary {
+  @apply text-gray-300;
+}
+
+/* Add additional global styles and utilities as needed */
